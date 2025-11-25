@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/elem-match.js"],
+  "sourcesContent": ["\r\nimport * as is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $elemMatch: function (d, q) {\r\n      return is.array(d) && d.some((e) => this.test(e, q))\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,SAAoB;AAEpB,IAAO,qBAAQ;AAAA,EACb,YAAY;AAAA,IAEV,YAAY,SAAU,GAAG,GAAG;AAC1B,aAAO,GAAG,MAAM,CAAC,KAAK,EAAE,KAAK,CAAC,MAAM,KAAK,KAAK,GAAG,CAAC,CAAC;AAAA,IACrD;AAAA,EAEF;AACF;",
+  "names": []
+}

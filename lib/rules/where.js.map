@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/where.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  conditions: {\r\n\r\n    $where: function (d, q) {\r\n      return q(d)\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,gBAAQ;AAAA,EACb,YAAY;AAAA,IAEV,QAAQ,SAAU,GAAG,GAAG;AACtB,aAAO,EAAE,CAAC;AAAA,IACZ;AAAA,EAEF;AACF;",
+  "names": []
+}

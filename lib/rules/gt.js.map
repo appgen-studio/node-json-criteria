@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/gt.js"],
+  "sourcesContent": ["export default {\r\n  conditions: {\r\n    $gt: function (d, q) {\r\n      return d > q\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAO,aAAQ;AAAA,EACb,YAAY;AAAA,IACV,KAAK,SAAU,GAAG,GAAG;AACnB,aAAO,IAAI;AAAA,IACb;AAAA,EACF;AACF;",
+  "names": []
+}

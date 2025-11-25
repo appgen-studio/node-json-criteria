@@ -1,6 +1,6 @@
 
 import assert from 'assert'
-import { ext } from '../src'
+import { ext } from '../lib/index.js'
 
 let y = (a, q) => assert.equal(true, ext.test(a, q))
 let n = (a, q) => assert.equal(false, ext.test(a, q))

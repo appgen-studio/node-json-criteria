@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/options.js"],
+  "sourcesContent": ["\r\nimport * as is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // HACK: To support $regex's $options.\r\n    $options: function (d, q, p) {\r\n      let r = false\r\n      if (!is.none(p.$regex)) {\r\n        r = true\r\n      } else {\r\n        throw new TypeError(`$options reserved for $regex.`)\r\n      }\r\n      return r\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,SAAoB;AAEpB,IAAO,kBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,UAAU,SAAU,GAAG,GAAG,GAAG;AAC3B,UAAI,IAAI;AACR,UAAI,CAAC,GAAG,KAAK,EAAE,MAAM,GAAG;AACtB,YAAI;AAAA,MACN,OAAO;AACL,cAAM,IAAI,UAAU,+BAA+B;AAAA,MACrD;AACA,aAAO;AAAA,IACT;AAAA,EAEF;AACF;",
+  "names": []
+}

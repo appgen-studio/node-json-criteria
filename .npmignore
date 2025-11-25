@@ -1,0 +1,42 @@
+# Source files (not needed in published package)
+src/
+
+# Tests
+spec/
+
+# Browser bundles (not needed for npm consumers)
+dist/
+
+# Build configuration
+build.js
+Gruntfile.js
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# CI/CD
+.travis.yml
+.github/
+
+# Lock files (consumers should use their own)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Other
+node_modules/
+*.log
+

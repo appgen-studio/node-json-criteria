@@ -1,6 +1,6 @@
 
 import assert from 'assert'
-import { minimize } from '../src'
+import { minimize } from '../lib/index.js'
 
 let eq = (a, b) => assert.deepEqual(minimize(b), a)
 

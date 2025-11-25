@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/length.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  virtuals: {\r\n\r\n    // Returns length of arrays, strings and all objects with .length property.\r\n    $length: function (d) {\r\n      let r = undefined\r\n      if (d != null && d.hasOwnProperty('length')) {\r\n        r = d.length\r\n      }\r\n      return r\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,iBAAQ;AAAA,EACb,UAAU;AAAA;AAAA,IAGR,SAAS,SAAU,GAAG;AACpB,UAAI,IAAI;AACR,UAAI,KAAK,QAAQ,EAAE,eAAe,QAAQ,GAAG;AAC3C,YAAI,EAAE;AAAA,MACR;AACA,aAAO;AAAA,IACT;AAAA,EAEF;AACF;",
+  "names": []
+}

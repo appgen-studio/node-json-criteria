@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/and.js"],
+  "sourcesContent": ["\r\nimport * as ensure from '../ensure'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $and: function (d, q) {\r\n      ensure.array(q)\r\n      return q.reduce(((p, c) => p && this.test(d, c)), true)\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,aAAwB;AAExB,IAAO,cAAQ;AAAA,EACb,YAAY;AAAA,IAEV,MAAM,SAAU,GAAG,GAAG;AACpB,aAAO,MAAM,CAAC;AACd,aAAO,EAAE,OAAQ,CAAC,GAAG,MAAM,KAAK,KAAK,KAAK,GAAG,CAAC,GAAI,IAAI;AAAA,IACxD;AAAA,EAEF;AACF;",
+  "names": []
+}

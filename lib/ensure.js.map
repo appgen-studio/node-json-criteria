@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/ensure.js"],
+  "sourcesContent": ["\r\nimport * as is from './is'\r\n\r\nexport function array (a, options = {}) {\r\n  if (is.array(a)) {\r\n    if (options.length !== undefined) {\r\n      if (options.length !== a.length) {\r\n        throw new TypeError(`Expected array with length ${options.length}, got length ${a.length}.`)\r\n      }\r\n    }\r\n  } else {\r\n    throw new TypeError(`Expected array, got ${typeof(a)}.`)\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,SAAoB;AAEb,SAAS,MAAO,GAAG,UAAU,CAAC,GAAG;AACtC,MAAI,GAAG,MAAM,CAAC,GAAG;AACf,QAAI,QAAQ,WAAW,QAAW;AAChC,UAAI,QAAQ,WAAW,EAAE,QAAQ;AAC/B,cAAM,IAAI,UAAU,8BAA8B,QAAQ,MAAM,gBAAgB,EAAE,MAAM,GAAG;AAAA,MAC7F;AAAA,IACF;AAAA,EACF,OAAO;AACL,UAAM,IAAI,UAAU,uBAAuB,OAAO,CAAE,GAAG;AAAA,EACzD;AACF;",
+  "names": []
+}

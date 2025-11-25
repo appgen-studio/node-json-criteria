@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/all.js"],
+  "sourcesContent": ["\r\nimport * as is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $all: function (d, q) {\r\n      return is.array(d) && is.array(q) && q.every((e) => d.indexOf(e) >= 0)\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,SAAoB;AAEpB,IAAO,cAAQ;AAAA,EACb,YAAY;AAAA,IAEV,MAAM,SAAU,GAAG,GAAG;AACpB,aAAO,GAAG,MAAM,CAAC,KAAK,GAAG,MAAM,CAAC,KAAK,EAAE,MAAM,CAAC,MAAM,EAAE,QAAQ,CAAC,KAAK,CAAC;AAAA,IACvE;AAAA,EAEF;AACF;",
+  "names": []
+}

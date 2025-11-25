@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/strftime.js"],
+  "sourcesContent": ["\r\nimport * as strftime from '../strftime'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // Matches strings with specified date-time format.\r\n    $strftime: function (d, q) {\r\n      return strftime.test(q, d)\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,eAA0B;AAE1B,IAAO,mBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,WAAW,SAAU,GAAG,GAAG;AACzB,aAAO,SAAS,KAAK,GAAG,CAAC;AAAA,IAC3B;AAAA,EAEF;AACF;",
+  "names": []
+}

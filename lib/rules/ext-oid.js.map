@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/ext-oid.js"],
+  "sourcesContent": ["export default {\r\n  expansions: {\r\n\r\n    // Matches Extended JSON ObjectId.\r\n    '$ext:oid': {\r\n      $type: 'object',\r\n      $keys: [ '$oid' ],\r\n      ' $oid': {\r\n        $is: 'string:oid'\r\n      }\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAO,kBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,YAAY;AAAA,MACV,OAAO;AAAA,MACP,OAAO,CAAE,MAAO;AAAA,MAChB,SAAS;AAAA,QACP,KAAK;AAAA,MACP;AAAA,IACF;AAAA,EAEF;AACF;",
+  "names": []
+}

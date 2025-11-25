@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/email.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches e-mail string.\r\n    $email: {\r\n      $type: 'string',\r\n      $regex: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,gBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,QAAQ;AAAA,MACN,OAAO;AAAA,MACP,QAAQ;AAAA,IACV;AAAA,EAEF;AACF;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/array.js"],
+  "sourcesContent": ["\r\nimport is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // Evaluates to true if all conditions are not met, false otherwise.\r\n    $array: function (d, q) {\r\n      return is.array(d) ^ q\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,gBAAe;AAEf,IAAO,gBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,QAAQ,SAAU,GAAG,GAAG;AACtB,aAAO,UAAAA,QAAG,MAAM,CAAC,IAAI;AAAA,IACvB;AAAA,EAEF;AACF;",
+  "names": ["is"]
+}

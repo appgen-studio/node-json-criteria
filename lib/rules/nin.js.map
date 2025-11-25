@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/nin.js"],
+  "sourcesContent": ["\r\nimport { arrize } from '../utils'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // Evaluates to true if provided value is not in array document.\r\n    $nin: function (d, q) {\r\n      let da = arrize(d)\r\n      return arrize(q).every(function (e) {\r\n        return da.indexOf(e) < 0\r\n      })\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,mBAAuB;AAEvB,IAAO,cAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,MAAM,SAAU,GAAG,GAAG;AACpB,UAAI,SAAK,qBAAO,CAAC;AACjB,iBAAO,qBAAO,CAAC,EAAE,MAAM,SAAU,GAAG;AAClC,eAAO,GAAG,QAAQ,CAAC,IAAI;AAAA,MACzB,CAAC;AAAA,IACH;AAAA,EAEF;AACF;",
+  "names": []
+}

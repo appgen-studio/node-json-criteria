@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/or.js"],
+  "sourcesContent": ["\r\nimport * as ensure from '../ensure'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $or: function (d, q) {\r\n      ensure.array(q)\r\n      return q.reduce(((p, c) => p || this.test(d, c)), false)\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,aAAwB;AAExB,IAAO,aAAQ;AAAA,EACb,YAAY;AAAA,IAEV,KAAK,SAAU,GAAG,GAAG;AACnB,aAAO,MAAM,CAAC;AACd,aAAO,EAAE,OAAQ,CAAC,GAAG,MAAM,KAAK,KAAK,KAAK,GAAG,CAAC,GAAI,KAAK;AAAA,IACzD;AAAA,EAEF;AACF;",
+  "names": []
+}

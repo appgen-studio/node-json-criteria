@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/number-integer.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches integer numbers (..., -2, -1, 0, 1, 2, ...)\r\n    '$number:integer': {\r\n      $type: 'number',\r\n      $mod: [ 1, 0 ]\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,yBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,mBAAmB;AAAA,MACjB,OAAO;AAAA,MACP,MAAM,CAAE,GAAG,CAAE;AAAA,IACf;AAAA,EAEF;AACF;",
+  "names": []
+}

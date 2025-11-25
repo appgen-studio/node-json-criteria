@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/ne.js"],
+  "sourcesContent": ["\r\nimport same from '../same'\r\n\r\nexport default {\r\n  conditions: {\r\n    $ne: function (d, q) {\r\n      return !same(d, q)\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,kBAAiB;AAEjB,IAAO,aAAQ;AAAA,EACb,YAAY;AAAA,IACV,KAAK,SAAU,GAAG,GAAG;AACnB,aAAO,KAAC,YAAAA,SAAK,GAAG,CAAC;AAAA,IACnB;AAAA,EACF;AACF;",
+  "names": ["same"]
+}

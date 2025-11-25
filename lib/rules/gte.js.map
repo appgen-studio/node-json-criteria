@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/gte.js"],
+  "sourcesContent": ["export default {\r\n  conditions: {\r\n    $gte: function (d, q) {\r\n      return d >= q\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAO,cAAQ;AAAA,EACb,YAAY;AAAA,IACV,MAAM,SAAU,GAAG,GAAG;AACpB,aAAO,KAAK;AAAA,IACd;AAAA,EACF;AACF;",
+  "names": []
+}

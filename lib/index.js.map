@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.js"],
+  "sourcesContent": ["\r\nimport ext_ from './engine/ext'\r\nimport mongo_ from './engine/mongo'\r\nexport { minimize } from './utils'\r\n\r\nexport default mongo_\r\n\r\nexport function test (a, q) {\r\n  return mongo_.test(a, q)\r\n}\r\n\r\nexport const ext = ext_\r\nexport const mongo = mongo_\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,iBAAiB;AACjB,mBAAmB;AACnB,mBAAyB;AAEzB,IAAO,gBAAQ,aAAAA;AAER,SAAS,KAAM,GAAG,GAAG;AAC1B,SAAO,aAAAA,QAAO,KAAK,GAAG,CAAC;AACzB;AAEO,MAAM,MAAM,WAAAC;AACZ,MAAM,QAAQ,aAAAD;",
+  "names": ["mongo_", "ext_"]
+}

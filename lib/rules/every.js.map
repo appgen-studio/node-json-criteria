@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/every.js"],
+  "sourcesContent": ["\r\nimport is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // Evaluates to true if all conditions are met, false otherwise.\r\n    $none: function (d, q) {\r\n      return is.array(d) && d.every((e) => this.test(e, q))\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,gBAAe;AAEf,IAAO,gBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,OAAO,SAAU,GAAG,GAAG;AACrB,aAAO,UAAAA,QAAG,MAAM,CAAC,KAAK,EAAE,MAAM,CAAC,MAAM,KAAK,KAAK,GAAG,CAAC,CAAC;AAAA,IACtD;AAAA,EAEF;AACF;",
+  "names": ["is"]
+}

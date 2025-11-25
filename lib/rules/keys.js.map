@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/keys.js"],
+  "sourcesContent": ["\r\nimport is from '../is'\r\n\r\nexport default {\r\n  virtuals: {\r\n\r\n    // Returns keys of values.\r\n    $keys: function (d) {\r\n      let r = undefined\r\n      try {\r\n        r = Object.keys(d)\r\n        r.sort()\r\n      } catch (ex) {\r\n      }\r\n      return r\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,gBAAe;AAEf,IAAO,eAAQ;AAAA,EACb,UAAU;AAAA;AAAA,IAGR,OAAO,SAAU,GAAG;AAClB,UAAI,IAAI;AACR,UAAI;AACF,YAAI,OAAO,KAAK,CAAC;AACjB,UAAE,KAAK;AAAA,MACT,SAAS,IAAI;AAAA,MACb;AACA,aAAO;AAAA,IACT;AAAA,EAEF;AACF;",
+  "names": []
+}

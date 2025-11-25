@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/is.js"],
+  "sourcesContent": ["\r\nimport * as is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // Evaluates to true if provided rule name prefixed with $ evaluates to true.\r\n    $is: function (d, q) {\r\n      let r = false\r\n      switch (true) {\r\n\r\n        // Single rule, ie: { foo: { $is: 'number' } }\r\n        case is.string(q):\r\n          r = this.test(d, { [`$${q}`]: true })\r\n          break\r\n\r\n        // Any of provided rules, ie: { foo: { $is: [ 'number', 'string' ] } }\r\n        case is.strings(q):\r\n          r = this.test(d, {\r\n            $or: q.map(function (e) {\r\n              return { [ `$${e}` ] : true }\r\n            })\r\n          })\r\n          break\r\n\r\n        default:\r\n          throw new Error('$is supports string or strings query only for now.')\r\n      }\r\n      return r\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,SAAoB;AAEpB,IAAO,aAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,KAAK,SAAU,GAAG,GAAG;AACnB,UAAI,IAAI;AACR,cAAQ,MAAM;AAAA;AAAA,QAGZ,KAAK,GAAG,OAAO,CAAC;AACd,cAAI,KAAK,KAAK,GAAG,EAAE,CAAC,IAAI,CAAC,EAAE,GAAG,KAAK,CAAC;AACpC;AAAA;AAAA,QAGF,KAAK,GAAG,QAAQ,CAAC;AACf,cAAI,KAAK,KAAK,GAAG;AAAA,YACf,KAAK,EAAE,IAAI,SAAU,GAAG;AACtB,qBAAO,EAAE,CAAE,IAAI,CAAC,EAAG,GAAI,KAAK;AAAA,YAC9B,CAAC;AAAA,UACH,CAAC;AACD;AAAA,QAEF;AACE,gBAAM,IAAI,MAAM,oDAAoD;AAAA,MACxE;AACA,aAAO;AAAA,IACT;AAAA,EAEF;AACF;",
+  "names": []
+}

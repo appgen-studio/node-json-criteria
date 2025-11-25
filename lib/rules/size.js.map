@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/size.js"],
+  "sourcesContent": ["\r\nimport * as is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $size: function (d, q) {\r\n      return q === (is.array(d) ? d.length : 0)\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,SAAoB;AAEpB,IAAO,eAAQ;AAAA,EACb,YAAY;AAAA,IAEV,OAAO,SAAU,GAAG,GAAG;AACrB,aAAO,OAAO,GAAG,MAAM,CAAC,IAAI,EAAE,SAAS;AAAA,IACzC;AAAA,EAEF;AACF;",
+  "names": []
+}

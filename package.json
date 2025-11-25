@@ -1,14 +1,24 @@
 {
-  "name": "json-criteria",
-  "version": "2.7.0",
+  "name": "@care-portals/node-json-criteria",
+  "version": "3.0.0",
   "description": "Evaluate criteria queries on JSON objects MongoDB style.",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "grunt test",
-    "prepublish": "grunt recompile"
+    "clean": "node -e \"require('fs').rmSync('lib', {recursive: true, force: true})\"",
+    "build": "node build.js",
+    "test": "mocha",
+    "prepublishOnly": "npm run clean && npm run build && npm test",
+    "publish:dry-run": "npm publish --dry-run",
+    "publish:public": "npm publish --access public"
   },
-  "repository": "mirek/node-json-criteria",
-  "homepage": "https://github.com/mirek/node-json-criteria",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/care-portals/node-json-criteria"
+  },
+  "homepage": "https://github.com/care-portals/node-json-criteria",
   "keywords": [
     "mongo",
     "like",
@@ -18,23 +28,16 @@
     "evaluate",
     "find"
   ],
-  "author": "Mirek Rusin http://github.com/mirek",
+  "author": "Forked from Mirek Rusin http://github.com/mirek",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "json-hash": "^1.1.0"
   },
   "devDependencies": {
-    "babel": "^5.2.17",
-    "babelify": "^6.0.2",
-    "grunt": "^0.4.5",
-    "grunt-babel": "^5.0.0",
-    "grunt-browserify": "^3.8.0",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-mocha-test": "^0.12.7",
-    "load-grunt-tasks": "^3.1.0",
-    "mocha": "^2.2.4"
+    "esbuild": "^0.24.0",
+    "mocha": "^10.8.2"
   }
 }

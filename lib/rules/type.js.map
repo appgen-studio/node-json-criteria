@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/type.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  conditions: {\r\n\r\n    $type: function (d, q) {\r\n      return typeof(d) === q\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,eAAQ;AAAA,EACb,YAAY;AAAA,IAEV,OAAO,SAAU,GAAG,GAAG;AACrB,aAAO,OAAO,MAAO;AAAA,IACvB;AAAA,EAEF;AACF;",
+  "names": []
+}

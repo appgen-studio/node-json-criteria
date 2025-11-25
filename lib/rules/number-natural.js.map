@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/number-natural.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches natural numbers (0, 1, 2...).\r\n    '$number:natural': {\r\n      $is: 'number:integer',\r\n      $gte: 0\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,yBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,mBAAmB;AAAA,MACjB,KAAK;AAAA,MACL,MAAM;AAAA,IACR;AAAA,EAEF;AACF;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/unique.js"],
+  "sourcesContent": ["import is from '../is'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    // Evaluates to true if value is an array with unique values.\r\n    $unique: function (d, q) {\r\n      throw new Error('TODO')\r\n      return false\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,gBAAe;AAEf,IAAO,iBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,SAAS,SAAU,GAAG,GAAG;AACvB,YAAM,IAAI,MAAM,MAAM;AACtB,aAAO;AAAA,IACT;AAAA,EAEF;AACF;",
+  "names": []
+}

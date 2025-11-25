@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/number.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches numbers.\r\n    '$number': {\r\n      $type: 'number'\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,iBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,WAAW;AAAA,MACT,OAAO;AAAA,IACT;AAAA,EAEF;AACF;",
+  "names": []
+}

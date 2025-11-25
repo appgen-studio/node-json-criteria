@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/strftime-iso.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches ISO date strings.\r\n    '$strftime:iso': {\r\n      $strftime: '%Y-%m-%dT%H:%M:%S%Z'\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,uBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,iBAAiB;AAAA,MACf,WAAW;AAAA,IACb;AAAA,EAEF;AACF;",
+  "names": []
+}

@@ -5,32 +5,23 @@ Criteria queries on JSON objects Mongo style.
 
 ## Installation
 
-    npm install json-criteria --save
+    npm install @care-portals/node-json-criteria --save
 
 ## Usage
 
-### Node
+### CommonJS
 
-    // npm install babel --save
-    // Once at the entrypoint of your app.
-    require('babel/register')
+```javascript
+const { test } = require('@care-portals/node-json-criteria');
+console.log(test({ foo: 1 }, { foo: { $gt: 0 } }));
+```
 
-    var test = require('json-criteria').test
-    console.log(test( {foo:1}, {foo:{$gt:0}} ))
+### ES Modules
 
-### CoffeeScript
-
-    # npm install babel --save
-    # Once at the entrypoint of your app.
-    require("babel/register")
-
-    { test } = require 'json-criteria'
-    console.log test {foo:1}, {foo:{$gt:0}}
-
-### Babel
-
-    import { test } from 'json-criteria'
-    console.log(test( {foo:1}, {foo:{$gt:0}} ))
+```javascript
+import { test } from '@care-portals/node-json-criteria';
+console.log(test({ foo: 1 }, { foo: { $gt: 0 } }));
+```
 
 ## Ops
 
@@ -73,7 +64,7 @@ Let's say you've got JSON based RESTful API that you want to test using mocha:
 
     var assert = require('assert')
     var request = require('request')
-    var jc = require('json-criteria')
+    var jc = require('@care-portals/node-json-criteria')
     var endpoint = 'http://localhost:3000/api/v1'
 
     function get (path, criteria) {

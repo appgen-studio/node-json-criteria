@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/regex.js"],
+  "sourcesContent": ["\r\nimport * as ensure from '../ensure'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $regex: function (d, q, p) {\r\n      return !!d.match(new RegExp(q, p.$options))\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,aAAwB;AAExB,IAAO,gBAAQ;AAAA,EACb,YAAY;AAAA,IAEV,QAAQ,SAAU,GAAG,GAAG,GAAG;AACzB,aAAO,CAAC,CAAC,EAAE,MAAM,IAAI,OAAO,GAAG,EAAE,QAAQ,CAAC;AAAA,IAC5C;AAAA,EAEF;AACF;",
+  "names": []
+}

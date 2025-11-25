@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/mod.js"],
+  "sourcesContent": ["\r\nimport * as ensure from '../ensure'\r\n\r\nexport default {\r\n  conditions: {\r\n\r\n    $mod: function (d, q) {\r\n      ensure.array(q, { length: 2 })\r\n      return (d % q[0]) === q[1]\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,aAAwB;AAExB,IAAO,cAAQ;AAAA,EACb,YAAY;AAAA,IAEV,MAAM,SAAU,GAAG,GAAG;AACpB,aAAO,MAAM,GAAG,EAAE,QAAQ,EAAE,CAAC;AAC7B,aAAQ,IAAI,EAAE,CAAC,MAAO,EAAE,CAAC;AAAA,IAC3B;AAAA,EAEF;AACF;",
+  "names": []
+}

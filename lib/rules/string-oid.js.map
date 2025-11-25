@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/string-oid.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches ObjectId string.\r\n    '$string:oid': {\r\n      $type: 'string',\r\n      $regex: /^[0-9A-Fa-f]{24}$/\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,qBAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,eAAe;AAAA,MACb,OAAO;AAAA,MACP,QAAQ;AAAA,IACV;AAAA,EAEF;AACF;",
+  "names": []
+}

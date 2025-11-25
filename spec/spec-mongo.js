@@ -1,6 +1,6 @@
 
 import assert from 'assert'
-import { mongo } from '../src'
+import { mongo } from '../lib/index.js'
 
 let y = (a, q) => assert.equal(true, mongo.test(a, q))
 let n = (a, q) => assert.equal(false, mongo.test(a, q))

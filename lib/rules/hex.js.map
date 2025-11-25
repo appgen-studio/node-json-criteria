@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/hex.js"],
+  "sourcesContent": ["\r\nexport default {\r\n  expansions: {\r\n\r\n    // Matches hex string.\r\n    '$hex': {\r\n      $type: 'string',\r\n      $regex: /^[0-9A-Fa-f]+$/\r\n    }\r\n\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,IAAO,cAAQ;AAAA,EACb,YAAY;AAAA;AAAA,IAGV,QAAQ;AAAA,MACN,OAAO;AAAA,MACP,QAAQ;AAAA,IACV;AAAA,EAEF;AACF;",
+  "names": []
+}
