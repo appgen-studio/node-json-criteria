@@ -1,4 +1,3 @@
-
 ## Summary [![Build Status](https://travis-ci.org/mirek/node-json-criteria.png?branch=master)](https://travis-ci.org/mirek/node-json-criteria)
 
 Criteria queries on JSON objects Mongo style.
@@ -12,14 +11,14 @@ Criteria queries on JSON objects Mongo style.
 ### CommonJS
 
 ```javascript
-const { test } = require('@care-portals/node-json-criteria');
+const { test } = require("@care-portals/node-json-criteria");
 console.log(test({ foo: 1 }, { foo: { $gt: 0 } }));
 ```
 
 ### ES Modules
 
 ```javascript
-import { test } from '@care-portals/node-json-criteria';
+import { test } from "@care-portals/node-json-criteria";
 console.log(test({ foo: 1 }, { foo: { $gt: 0 } }));
 ```
 
@@ -27,32 +26,35 @@ console.log(test({ foo: 1 }, { foo: { $gt: 0 } }));
 
 Criteria queries follow MongoDB convention. You can use operators described at http://docs.mongodb.org/manual/reference/operator/query
 
-* logical ops
-  * `{ $and: [ ... ] }` - all of
-  * `{ $or: [ ... ] }` - any of
-  * `{ $nor: [ ... ] }` - none of
-  * `{ $not: ... }` - not, ie. `{ $not: { $gt: 0, $lt: 1 } }`
-* comparison ops
-  * `{ field: ... }` - is equal (implicit)
-  * `{ field: { $eq: ... } }` - is equal (explicit)
-  * `{ field: { $ne: ... } }` - is not equal
-  * `{ field: { $gt: ... } }` - is greater than
-  * `{ field: { $gte: ... } }` - is greater than or equal
-  * `{ field: { $lt: ... } }` - is lower than
-  * `{ field: { $lte: ... } }` - is lower than or equal
-  * `{ field: { $in: [ ... ] } }` - at least one element matches value (or value's elements if array)
-  * `{ field: { $nin: [ ... ] } }` - none of elements match value (or value's elements if array)
-* element ops
-  * `{ field: { $exists: true/false } }` - field exists
-  * `{ field: { $type: 'number|string|...' } }` - matches field type
-* evaluation ops
-  * `{ field: { $mod: [ div, rem ] } }` - divided by div has reminder rem
-  * `{ field: { $regexp: '...', $options: 'i' } }` - matches regular expression with optional options
-  * `{ field: { $where: function (v) { return true/false } } }` - performs test using provided function, for security purposes function body as string is not supported
-* array ops
-  * `{ field: { $all: [ ... ] } }` - all of the values are in the field's value
-  * `{ field: { $elemMatch: ... } }` - at least one element matches
-  * `{ field: { $size: ... } }` - matches length of field's array value
+- logical ops
+  - `{ $and: [ ... ] }` - all of
+  - `{ $or: [ ... ] }` - any of
+  - `{ $nor: [ ... ] }` - none of
+  - `{ $not: ... }` - not, ie. `{ $not: { $gt: 0, $lt: 1 } }`
+- comparison ops
+  - `{ field: ... }` - is equal (implicit)
+  - `{ field: { $eq: ... } }` - is equal (explicit)
+  - `{ field: { $ne: ... } }` - is not equal
+  - `{ field: { $gt: ... } }` - is greater than
+  - `{ field: { $gte: ... } }` - is greater than or equal
+  - `{ field: { $lt: ... } }` - is lower than
+  - `{ field: { $lte: ... } }` - is lower than or equal
+  - `{ field: { $in: [ ... ] } }` - at least one element matches value (or value's elements if array)
+  - `{ field: { $nin: [ ... ] } }` - none of elements match value (or value's elements if array)
+- element ops
+  - `{ field: { $exists: true/false } }` - field exists
+  - `{ field: { $type: 'number|string|...' } }` - matches field type
+- evaluation ops
+  - `{ field: { $mod: [ div, rem ] } }` - divided by div has reminder rem
+  - `{ field: { $regexp: '...', $options: 'i' } }` - matches regular expression with optional options
+  - `{ field: { $where: function (v) { return true/false } } }` - performs test using provided function, for security purposes function body as string is not supported
+- array ops
+  - `{ field: { $all: [ ... ] } }` - all of the values are in the field's value
+  - `{ field: { $elemMatch: ... } }` - at least one element matches
+  - `{ field: { $size: ... } }` - matches length of field's array value
+  - `{ field: { $first: ... } }` - matches the first element of the array
+  - `{ field: { $last: ... } }` - matches the last element of the array
+  - `{ field: { $pop: ... } }` - matches the last element of the array (similar to Array.pop())
 
 For more examples have a look at specs.
 
