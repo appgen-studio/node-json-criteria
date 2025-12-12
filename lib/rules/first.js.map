@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/first.js"],
+  "sourcesContent": ["import * as is from \"../is\";\r\n\r\nexport default {\r\n  virtuals: {\r\n    // Returns the first element of an array.\r\n    $first: function (d) {\r\n      let r = undefined;\r\n      if (is.array(d) && d.length > 0) {\r\n        r = d[0];\r\n      }\r\n      return r;\r\n    },\r\n  },\r\n};\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,SAAoB;AAEpB,IAAO,gBAAQ;AAAA,EACb,UAAU;AAAA;AAAA,IAER,QAAQ,SAAU,GAAG;AACnB,UAAI,IAAI;AACR,UAAI,GAAG,MAAM,CAAC,KAAK,EAAE,SAAS,GAAG;AAC/B,YAAI,EAAE,CAAC;AAAA,MACT;AACA,aAAO;AAAA,IACT;AAAA,EACF;AACF;",
+  "names": []
+}

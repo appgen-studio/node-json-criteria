@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/rules/pop.js"],
+  "sourcesContent": ["import * as is from \"../is\";\r\n\r\nexport default {\r\n  virtuals: {\r\n    // Returns the last element of an array.\r\n    // Similar to JavaScript's Array.pop() behavior (returns last element).\r\n    $pop: function (d) {\r\n      let r = undefined;\r\n      if (is.array(d) && d.length > 0) {\r\n        r = d[d.length - 1];\r\n      }\r\n      return r;\r\n    },\r\n  },\r\n};\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,SAAoB;AAEpB,IAAO,cAAQ;AAAA,EACb,UAAU;AAAA;AAAA;AAAA,IAGR,MAAM,SAAU,GAAG;AACjB,UAAI,IAAI;AACR,UAAI,GAAG,MAAM,CAAC,KAAK,EAAE,SAAS,GAAG;AAC/B,YAAI,EAAE,EAAE,SAAS,CAAC;AAAA,MACpB;AACA,aAAO;AAAA,IACT;AAAA,EACF;AACF;",
+  "names": []
+}
