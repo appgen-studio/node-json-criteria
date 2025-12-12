@@ -1,6 +1,6 @@
 {
   "name": "@care-portals/node-json-criteria",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Evaluate criteria queries on JSON objects MongoDB style.",
   "main": "lib/index.js",
   "files": [
